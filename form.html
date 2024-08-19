@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt School Application Form</title>
+</head>
+
+<nav>
+    <a href="about.html">About Me</a> | 
+    <a href="form.html">Altschool Form</a> | 
+    <a href="table.html">Courses in Altschool</a>
+</nav>
+
+<body>
+    <h1 style="color: blue;">Alt School Application Form</h1>
+    <img src="./Asset/Images/Alt school.png" alt="Alt">
+    <form>
+        <fieldset>
+            <legend>Student Information</legend>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Technical Information</legend>
+            <label for="experience">Do you have any programming experience?</label><br>
+            <select id="experience" name="experience" required>
+                <option value="">Select an option</option>
+                <option value="none">No Experience</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+            </select><br><br>
+
+            <label for="languages">Which programming languages do you know?</label><br>
+            <input type="checkbox" id="Frontend" name="languages" value="Frontend">
+            <label for="Frontend">Frontend</label><br>
+            <input type="checkbox" id="Backend" name="languages" value="Backend">
+            <label for="Backend">Backend</label><br>
+            <input type="checkbox" id="Cloud Engineering" name="languages" value="Cloud Engineering">
+            <label for="Cloud Engineering">Cloud Engineering</label><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Others</legend>
+            <label for="Others">Why do you want to join Alt School?</label><br>
+            <textarea id="Others" name="Others" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Application">
+
+    </form>
+</body>
+</html>
